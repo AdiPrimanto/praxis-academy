@@ -1,0 +1,117 @@
+Command Line
+1. CD
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>cd powershellscripts
+2. date /t
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>date /t
+   09/10/2019
+3. cls
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>cls
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>
+4. color
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>color 84
+   command prompt berubah warna menjadi abu-abu
+5. dir
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1>dir latihan
+   Volume in drive C has no label.    Volume Serial Number is 8AF7-4EE3
+
+   Directory of C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan
+
+   09/10/2019  22:14    <DIR>          .
+   09/10/2019  22:14    <DIR>          ..
+   09/10/2019  22:16                12 cmdline.txt
+   09/10/2019  22:14    <DIR>          powershellscripts
+               1 File(s)             12 bytes
+               3 Dir(s)  74.485.583.872 bytes free
+6. echo
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1>echo
+   ECHO is on.
+7. exit
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1>exit
+8. del
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>del *.*
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan\*.*, Are you sure (Y/N)? N
+9. erase
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>erase *.*
+   C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan\*.*, Are you sure (Y/N)? N
+10. help
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>help robocopy
+11. hostname
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>hostname
+    DESKTOP-U3G5A44
+12. mkdir
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>mkdir haha
+13. md
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>md Directory1
+14. netstat
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>netstat -e -s
+    Interface Statistics
+
+                           Received            Sent
+
+    Bytes                    3190748592        56386686
+    Unicast packets              729588          532422
+    Non-unicast packets            1206            1524
+    Discards                          0               0
+    Errors                            0               0
+    Unknown protocols                 0
+15. ping
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>ping 8.8.8.8
+    Pinging 8.8.8.8 with 32 bytes of data:
+    Reply from 8.8.8.8: bytes=32 time=69ms TTL=53
+    Reply from 8.8.8.8: bytes=32 time=60ms TTL=53
+
+    Ping statistics for 8.8.8.8:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+    Minimum = 60ms, Maximum = 69ms, Average = 64ms
+    Control-C
+16. prompt
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>prompt $d$s$s$t$_$g
+    10/10/2019  13:11:12,81
+    >
+
+    10/10/2019  13:11:15,33
+    >
+
+    10/10/2019  13:11:16,23
+17. query
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>query user
+    USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+    >adi_p                 console             3  Active    1+04:32  09/10/2019 21:20
+18. quser
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>quser
+    USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+    >adi_p                 console             3  Active    1+04:33  09/10/2019 21:20
+19. tree
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>tree \
+    Folder PATH listing
+Volume serial number is 8AF7-4EE3
+C:\
++---DRIVERS
+¦   +---Intel VGA driver
+¦   ¦   +---dpinstWaterMark
+¦   ¦   +---Source
+¦   ¦       +---DisplayAudio
+¦   ¦       ¦   +---10.23
+¦   ¦       +---Graphics
+¦   ¦           +---Lang
+¦   ¦               +---ar-SA
+¦   ¦               +---cs-CZ
+¦   ¦               +---da-DK
+¦   ¦               +---de-DE
+¦   ¦               +---el-GR
+¦   ¦               +---en-US
+¦   ¦               +---es-ES
+¦   ¦               +---fi-FI
+¦   ¦               +---fr-FR
+¦   ¦               +---he-IL
+¦   ¦               +---hr-HR
+¦   ¦               +---hu-HU
+¦   ¦               +---it-IT
+¦   ¦               +---ja-JP
+¦   ¦               +---ko-KR
+¦   ¦               +---nb-NO
+¦   ¦               +---nl-NL
+20. time
+    C:\xampp\htdocs\praxis-academy\kemampuan-dasar-1\latihan>time /t
+    13:17
