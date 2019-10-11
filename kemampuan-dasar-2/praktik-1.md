@@ -349,4 +349,115 @@ To https://github.com/adiprimanto/rhymes.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
+
+C:\xampp\htdocs>cd rhymes
+
+C:\xampp\htdocs\rhymes>git checkout -b hickory-dickory
+Switched to a new branch 'hickory-dickory'
+
+C:\xampp\htdocs\rhymes>wget https://www.acquia.com/sites/default/files/blog/hickory-dickory-dock.txt...
+'wget' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\rhymes>it remote rename origin alice
+'it' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\rhymes>git remote rename origin alice
+
+C:\xampp\htdocs\rhymes>git remote add bob https://github.com/AdiPrimanto/rhymes.git
+
+C:\xampp\htdocs\rhymes>git remote
+alice
+bob
+
+C:\xampp\htdocs\rhymes>git remote -v
+alice   https://github.com/adiprimanto/rhymes.git (fetch)
+alice   https://github.com/adiprimanto/rhymes.git (push)
+bob     https://github.com/AdiPrimanto/rhymes.git (fetch)
+bob     https://github.com/AdiPrimanto/rhymes.git (push)
+
+C:\xampp\htdocs\rhymes>git fetch bob
+From https://github.com/AdiPrimanto/rhymes
+ * [new branch]      master     -> bob/master
+
+C:\xampp\htdocs\rhymes>git branch -a
+* hickory-dickory
+  master
+  remotes/alice/master
+  remotes/bob/master
+
+C:\xampp\htdocs\rhymes>git checkout -b hickory-dickory bob/hickory-dickory
+fatal: 'bob/hickory-dickory' is not a commit and a branch 'hickory-dickory' cannot be created from it
+
+C:\xampp\htdocs\rhymes>git diff master hickory-dickory
+
+C:\xampp\htdocs\rhymes>git log -1 -p
+commit 50e8064b348ccdba1646ea5dc4c888cfca040a31 (HEAD -> hickory-dickory, bob/master, alice/master, master)
+Author: adiprimanto <adiprimanto.98@gmail.com>
+Date:   Fri Oct 11 17:38:11 2019 +0700
+
+    Added project overview to README.txt
+
+diff --git a/README.txt b/README.txt
+index e69de29..28264bd 100644
+--- a/README.txt
++++ b/README.txt
+@@ -0,0 +1 @@
++'This repo is a collection of my favorite nursery rhymes.'
+
+C:\xampp\htdocs\rhymes>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'alice/master'.
+
+C:\xampp\htdocs\rhymes>git merge hickory-dickory
+Already up to date.
+
+C:\xampp\htdocs\rhymes>git branch -D hickory-dickory
+Deleted branch hickory-dickory (was 50e8064).
+
+C:\xampp\htdocs\rhymes>git remote rename origin bob
+fatal: No such remote: 'origin'
+
+C:\xampp\htdocs\rhymes>git remote add alice https://github.com/AdiPrimanto/rhymes.git
+fatal: remote alice already exists.
+
+C:\xampp\htdocs\rhymes>git remote
+alice
+bob
+
+C:\xampp\htdocs\rhymes>git remote -v
+alice   https://github.com/adiprimanto/rhymes.git (fetch)
+alice   https://github.com/adiprimanto/rhymes.git (push)
+bob     https://github.com/AdiPrimanto/rhymes.git (fetch)
+bob     https://github.com/AdiPrimanto/rhymes.git (push)
+
+C:\xampp\htdocs\rhymes>git remote update
+Fetching alice
+Fetching bob
+
+C:\xampp\htdocs\rhymes>git checkout master
+Already on 'master'
+Your branch is up to date with 'alice/master'.
+
+C:\xampp\htdocs\rhymes>git merge alice/master
+Already up to date.
+
+C:\xampp\htdocs\rhymes>git diff alice/master
+
+C:\xampp\htdocs\rhymes>git push bob master
+Everything up-to-date
+
+C:\xampp\htdocs\rhymes>git checkout -b bobs-changes
+Switched to a new branch 'bobs-changes'
+
+C:\xampp\htdocs\rhymes>git add jack-be-nimble.txt
+fatal: pathspec 'jack-be-nimble.txt' did not match any files
+
+C:\xampp\htdocs\rhymes>wget https://www.acquia.com/sites/default/files/blog/jack-be-nimble.txt
+'wget' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\rhymes>
+
 C:\xampp\htdocs\rhymes>
