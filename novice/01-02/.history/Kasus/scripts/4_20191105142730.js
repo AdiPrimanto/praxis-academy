@@ -1,0 +1,13 @@
+let a = 2,
+    b = 10,
+    c = 5,
+    d = 7;
+if((a > b) && (a > c) && (a > d)){
+    console.log(a);
+} else if((b > a) && (b > c) && (b > d)){
+    console.log(b);
+} else if((c > a) && (c > b) && (c > d)){
+    console.log(c);
+} else if((x > 0) && (y < 0) && (z < 0)){
+    console.log("Tandanya adalah +");
+}
