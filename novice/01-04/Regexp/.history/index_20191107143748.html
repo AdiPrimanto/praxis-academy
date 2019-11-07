@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //filter nomor telpon
+        var nomor =
+            "022 123-456-2322, 021 123-456-2322, 
+            031 123-456-2377\n041 123-456-2322\n021 555-456-2322\n031 555-456-2322\n0341 555-456-2322\n021 123-456-2377\n0341 123-456-2377\n0341 123-021-2377\n0341 123-031-2377";
+
+        //a. Cari semua nomor yang kode areanya 021 atau 031 
+        var re1 = /(021|031)\s[0-9-]*/gm;
+        console.log(nomor.match(re1));
+
+        //b. Cari semua nomor yang kode areanya *bukan* 021 & 031
+        var re2 = /(?!021|031)^\d*\s[0-9-]*$/gm;
+        console.log(nomor.match(re2));
+
+        //c. Cari semua nomor yang dua angka terakhirnya 77 & kode areanya 031 atau 0341
+        var re3 = /(034?1)\s[0-9-]*(77)/gm;
+        console.log(nomor.match(re3));
+    </script>
+</body>
+
+</html>
