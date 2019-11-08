@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //MENAMPILKAN ARRAY
+        // let listArray = [9, 5, 7, 4, 6];
+        // console.log(listArray[4]);
+        // console.log(listArray[0]);
+
+        // -----------------------------------------
+
+        // let a = "adi primanto";
+        // console.log(a.toUpperCase());
+        // let b = "ADI PRIMANTO";
+        // console.log(b.toLowerCase());
+
+        // -----------------------------------------
+
+        // let x = [1, 2, 3];
+        // x.push(4);              //PUSH UNTUK MENAMBAHKAN
+        // x.push(5);
+        // console.log(x);
+        // console.log(x.pop());   //POP UNTUK MENGURANGI / MENGHILANGKAN VALUE TERAKHIR
+        // console.log(x);
+
+        // -----------------------------------------
+
+        //OBJECT.ASSIGN UTK menyalin semua properti dari satu objek ke objek lain 
+        // let a = { x: 1, y: 2};
+        // Object.assign(a, {y:3, z: 4});
+        // console.log(a);                 // {x: 1, y: 3, z: 4}
+
+        // -----------------------------------------
+
+        // fungsi utama dari operator typeof itu sendiri adalah melakukan pengecekan
+        // tipe data dari sebuah nilai
+
+        // -----------------------------------------
+
+        let object1 = { value: 10};
+        let object2 = object1;
+        let object3 = {
+            value: 10
+        };
+
+        console.log(object1 == object2);
+        // → true
+        console.log(object1 == object3);
+        // → false
+
+
+        object1.value = 15;
+        console.log(object2.value);
+        // → 15
+        console.log(object3.value);
+        // → 10
+    </script>
+</body>
+
+</html>
