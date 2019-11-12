@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- WEAKMAP -->
+
+    <script>
+    //weakmap weakset jk ada data akan mencari brp bit utk keperluan memori local storage
+    let john = { name : 'John'}    
+    let weakMap = new weakMap();
+        weakMap.set(john, "...");
+        john = null;
+    </script>
+
+    <!-- WEAKSET -->
+    <script>
+        let visitedSet = new WeakSet();
+        let john = { name : 'John' };
+        let pete = { name : 'Pete' };
+        let mary = { name : 'Mary' };
+
+        visitedSet.add(john);
+        
+    </script>
+</body>
+
+</html>
