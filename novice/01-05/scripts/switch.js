@@ -30,4 +30,16 @@
 // }
 
 let item = prompt("Masukkan makanan / minuman: \ ");
-
+switch (item) {
+    case "nanas":
+    case "jambu":
+        alert("buah enak");
+        break;
+    case "ayam":
+    case "sapi":
+        alert("daging enak");
+        break;
+    default:
+        alert("makanan tidak enak");
+        break;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function Alpha(){}
+       
+       Alpha.prototype.isiAlpha = function(letter){
+           return /^[a-zA-Z]$/.test(letter);
+       }
+
+       function Vowel(){}
+       Vowel.prototype = new Vowel();
+       Vowel.prototype.isiVowel = function(letter){
+           return /^[aeiueoyAEIUOTY]$/.test(letter);
+       }
+
+       function Constant(){}
+       Constant.prototype = new Constant();
+       Constant.prototype.isiConstant = function(letter){
+           return /^[aeiueoyAEIUOTY]$/.test(letter);
+       }
+
+       function prosesData(input){
+           var a = new Alpha();
+           console.log(`'${input[0]}' is ${a.isiAlpha(input[0])? ``: `not `}a letter. `);
+
+           var b = new Vowel();
+           console.log(`'${input[1]}' is ${a.isiAlpha(input[1])? `a letter ${b.isiVowel(input[1])? `and`: `but not`}
+           a vowel.`: "not a letter."}
+
+           var c = new Constant();
+           console.log(`'${input[2]}' is ${a.isiAlpha(input[2])? ``: `not `}a letter. `);           
+       }
+    </script>
+</body>
+</html>
