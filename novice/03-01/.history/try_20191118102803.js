@@ -1,0 +1,3 @@
+try{
+    alert("Start of")
+}
