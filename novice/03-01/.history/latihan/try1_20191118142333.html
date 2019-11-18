@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        let json = '{"name":"John", "age":"30"}';   //data from the server
+        let user = JSON.parse(json);                //convert the text representation to JS object
+
+        alert(user.name);
+        alert(user.age);
+    </script> -->
+
+    <!-- <script>
+        let json = "{ bad JSON}";
+        try {
+            let user = JSON.parse(json); //when an error occurs
+            alert(user.name); //doesn't work
+        } catch (err) {
+            //the execution jumps here
+            alert("Our apologies, the data has error, we'll try to request it one more time.");
+            alert(err.name);
+            alert(err.message);
+        }
+    </script> -->
+
+    <!-- <script>
+        let json = '{ "age": 30 }'; // incomplete data
+
+        try {
+
+            let user = JSON.parse(json); // <-- no errors
+            alert(user.name); // no name!
+
+        } catch (e) {
+            alert("doesn't execute");
+        }
+    </script> -->
+
+    <script>
+        //THROM --> menghasilkan / generates errors
+        let json = '{ "age":30 }'; //incompleted data
+        try {
+            let user = JSON.parse(json);
+            if (user.name) {
+                throw new SyntaxError("Incomplete data: no name");
+            }
+            alert(user.name);
+        } catch (err) {
+            alert("JSON error: " + err.message); //JSON error, incomplete data: no name
+        }
+    </script>
+
+    <script>
+        let num = +prompt("Enter a positive integer number?", 35)
+
+        let diff, result;
+
+        function fib(n) {
+            if (n < 0 || Math.trunc(n) != n) {
+                throw new Error("Must not be negative, and also an integer.");
+            }
+            return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+        }
+
+        let start = Date.now();
+
+        try {
+            result = fib(num);
+        } catch (e) {
+            result = 0;
+        } finally {
+            diff = Date.now() - start;
+        }
+
+        alert(result || "error occurred");
+
+        alert(`execution took ${diff}ms`);
+    </script>
+</body>
+
+</html>

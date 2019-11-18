@@ -17,3 +17,14 @@ try{
 catch(err){
     alert("Error has occured");
 }
+
+//////////// try catch only works for runtime errors /////////////
+
+try{
+    // {{{{{{{
+}
+catch(err){
+    alert("The engine can't understand this code, it's invalid");
+}
+
+//////////// try catch works  /////////////
