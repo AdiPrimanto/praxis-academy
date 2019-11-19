@@ -1,0 +1,3 @@
+class MultiplicatorUnitFailure(a, b){
+    
+}

@@ -1,0 +1,4 @@
+class MultiplicatorUnitFailure extends Error{}
+
+
+}
