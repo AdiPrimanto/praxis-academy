@@ -1,0 +1,10 @@
+<h1>SYNCHRONUS</h1>
+<p>Output dari kode Synchronus di atas dijamin akan sesuai urutan, karena setiap perintah harus menunggu perintah sebelumnya selesai. Proses seperti ini disebut BLOCKING.</p>
+
+<h1>ASYNCHRONUS</h1>
+<p>ASYNKRONUS eksekusi kode secara tidak berurutan.</p>
+<p>https://medium.com/coderupa/panduan-komplit-asynchronous-programming-pada-javascript-part-1-fca22279c056</p>
+
+<h3>Perhatikan pada file asynchronus.js</h3>
+<p>Pada baris ke 2 setTimeout digunakan untuk menunda eksekusi dalam satuan milisecond dalam hal ini untuk simulasi prosess async.
+Perhatikan bahwa outputnya tidak berurutan sesuai input (kode). Karena cara kerja asynchronous adalah berdasarkan waktu proses. Jika ada salah satu eksekusi membutuhkan proses yang agak lama, maka sembari menunggu prosess tersebut javascript mengeksekusi perintah selanjutnya.</p>
