@@ -16,9 +16,7 @@ function reliableMultiply(a, b){
             return primitiveMultiply(a, b);
             done = true;
         }
-        catch(error){
-            
-        }
+        catch(err)
     }
 }
 

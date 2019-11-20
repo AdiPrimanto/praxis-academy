@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio File Loader</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <ul>
+                <li data-loading='true'>
+                    <a href="leadguitar.mp3" class="track">Lead Guitar</a>
+                    <p class="loading-text">Loading...</p>
+                    <button data-playing="false" aria-describedby="guitar-play-label">
+                        <span id="guitar-play-label">Play</span>
+                    </button>
+                </li>
+                <li data-loading='true'>
+                    <a href="bassguitar.mp3" class="track">Bass Guitar</a>
+                    <p class="loading-text">Loading...</p>
+                    <button data-playing="false" aria-describedby="bass-play-label">
+                        <span id="bass-play-label">Play</span>
+                    </button>
+                </li>
+                <li data-loading='true'>
+                    <a href="drums.mp3" class="track">Drums</a>
+                    <p class="loading-text">Loading...</p>
+                    <button data-playing="false" aria-describedby="drums-play-label">
+                        <span id="drums-play-label">Play</span>
+                    </button>
+                </li>
+            </ul>
+            <p class="sourced">All track <source> from <a href="http://jplayer.org/">jplayer.org</a></p>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        console.clear();
+
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const audioCtx = new AudioContext();
+
+        const trackEls = document.querySelectorAll('li');
+    </script>
+
+</body>
+
+</html>

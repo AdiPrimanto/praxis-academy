@@ -1,0 +1,8 @@
+const response = await fetch('http://example.com/movies.json');
+const myJson = await response.json();
+console.log(JSON.stringify(myJson));
+
+//SUPPLYING REQUEST OPTIONS
+try{
+    const data = await postData('http://example.com/answer')
+}

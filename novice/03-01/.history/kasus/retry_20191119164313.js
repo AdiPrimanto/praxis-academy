@@ -14,10 +14,7 @@ function reliableMultiply(a, b){
     while(!done){
         try{
             return primitiveMultiply(a, b);
-            done = true;
-        }
-        catch(error){
-            
+            done = 
         }
     }
 }

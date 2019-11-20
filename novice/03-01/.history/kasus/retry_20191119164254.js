@@ -12,13 +12,7 @@ function primitiveMultiply(a, b){
 function reliableMultiply(a, b){
     let done = false;
     while(!done){
-        try{
-            return primitiveMultiply(a, b);
-            done = true;
-        }
-        catch(error){
-            
-        }
+        
     }
 }
 

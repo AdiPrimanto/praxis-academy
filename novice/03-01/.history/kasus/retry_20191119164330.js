@@ -19,6 +19,7 @@ function reliableMultiply(a, b){
         catch(error){
             
         }
+        )
     }
 }
 
