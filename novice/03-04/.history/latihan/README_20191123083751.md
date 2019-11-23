@@ -1,0 +1,33 @@
+<h1>DOM MANIPULATION JAVASCRIPT METHODS</h1>
+<ul>
+    <li>querySelector()</li>
+    <p>a</p>
+    <li>querySelectorAll()</li>
+    <p>a</p>
+    <li>addEventListener()</li>
+    <p>a</p>
+    <li>removeEventListener()</li>
+    <p>a</p>
+    <li>createElement()</li>
+    <p>a</p>
+    <li>appendChild()</li>
+    <p>a</p>
+    <li>removeChild()</li>
+    <p>a</p>
+    <li>replaceChild()</li>
+    <p>a</p>
+    <li>cloneNode()</li>
+    <p>a</p>
+    <li>insertBefore()</li>
+    <p>a</p>
+    <li>createDocumentFragment()</li>
+    <p>a</p>
+    <li>getComputedStyle()</li>
+    <p>a</p>
+    <li>setAttribute()</li>
+    <p>a</p>
+    <li>getAttribute()</li>
+    <p>a</p>
+    <li>removeAttribute()</li>
+    <p>a</p>
+</ul>
