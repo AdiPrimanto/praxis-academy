@@ -1,20 +1,29 @@
 <template>
     <div class="logos-wrapper">
-        <h2>Find Best Logos</h2>
+        <h2 class="title-header">Find Best Logos</h2>
         <div class="item-logos">
-            <img src="" alt="">
+            <img class="logo" alt="apple logo 2" src="../assets/apple2.png">
         </div>
         <div class="item-logos">
-            <img src="" alt="">
+            <img class="logo" alt="apple logo 3" src="../assets/apple3.png">
         </div>
         <div class="item-logos">
-            <img src="" alt="">
+            <img class="logo" alt="apple logo 4" src="../assets/apple4.png">
         </div>
         <div class="item-logos">
-            <img src="" alt="">
+            <img class="logo" alt="apple logo 5" src="../assets/apple5.png">
         </div>
         <div class="item-logos">
-            <img src="" alt="">
+            <img class="logo" alt="apple logo 6" src="../assets/apple6.png">
+        </div>
+        <div class="item-logos">
+            <img class="logo" alt="apple logo 4" src="../assets/apple4.png">
+        </div>
+        <div class="item-logos">
+            <img class="logo" alt="apple logo 5" src="../assets/apple5.png">
+        </div>
+        <div class="item-logos">
+            <img class="logo" alt="apple logo 6" src="../assets/apple6.png">
         </div>
     </div>
 </template>
@@ -26,17 +35,25 @@ export default {
 </script>
 
 <style scoped>
+    .title-header{
+        margin-bottom: 80px;
+        text-align: left;
+    }
     .logos-wrapper{
-        width: 70%;
+        width: 52%;
         overflow: hidden;
         margin: auto;
     }
     .item-logos{
         width: 150px;
         float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-bottom: 70px;
         height: 150px;
-        background: lightgreen;
+        /* background: lightgreen; */
+    }
+    .item-logos .logo{
+        width: 150px;
+        height: 150px;
     }
 </style>

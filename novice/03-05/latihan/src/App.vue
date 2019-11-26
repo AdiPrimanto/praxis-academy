@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img class="logo" alt="Vue logo" src="./assets/apple.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Logos />
   </div>
@@ -20,6 +20,10 @@ export default {
 </script>
 
 <style>
+.logo{
+        width: 150px;
+        height: 155px;
+    }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
