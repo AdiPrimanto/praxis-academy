@@ -1,0 +1,20 @@
+ul, #myUl{
+    list-style-type: none;
+}
+#myUl{
+    margin: 0;
+    padding: 0;
+}
+.caret{
+    cursor:pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.caret::before{
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    mr
+}

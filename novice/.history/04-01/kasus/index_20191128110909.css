@@ -1,0 +1,10 @@
+ul, #myUl{
+    list-style-type: none;
+}
+#myUl{
+    margin: 0;
+    padding: 0;
+}
+.caret{
+    
+}
