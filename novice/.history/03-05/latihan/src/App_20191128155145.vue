@@ -8,7 +8,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Logos from '@/components/Logos.vue'
+import Logos from '/components/Logos.vue'
 
 export default {
   name: 'app',
