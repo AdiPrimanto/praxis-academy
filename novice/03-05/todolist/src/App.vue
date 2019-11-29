@@ -11,12 +11,7 @@
           <div class="pekerjaan-rumah">
             <div class="row">
               <div v-for="tugasSaya in tugas" v-bind:key="tugasSaya.id" class="mb-4 tugas col-lg-12 text-left">
-                <div class="form-check">
-                  <input class="form-check-input" onclick="" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label item" v-bind:class="{'item-completed':tugasSaya.isDone}" for="defaultCheck1">
-                    {{tugasSaya.nama}}
-                  </label>
-                </div>
+                <ItemTugas v-bind:tugasSaya="tugasSaya"/>
               </div>
             </div>
           </div>
@@ -30,6 +25,7 @@
 
 <script>
   import 'bootstrap/dist/css/bootstrap.css'
+  import ItemTugas from"./components/ItemTugas.vue"
 
   export default {
     name: 'app',
@@ -56,7 +52,7 @@
       };
     },
     components: {
-
+      ItemTugas
     }
   }
 </script>
@@ -78,10 +74,12 @@
   .header h2 {
     margin: 0;
   }
-  .tugas .item{
+
+  .tugas .item {
     font-size: 20px;
   }
-  .item-completed{
+
+  .item-completed {
     color: #1abc9c;
 
   }
