@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <!-- <input type="text" id="input" v-model="message">
+        <p>The value of the input is: <strong>{{ message }}</strong></p> -->
+        <!-- --------------------------------- -->
+        <!-- {{ foo }} - {{ name }} -->
+        <!-- --------------------------------- -->
+        <ol>
+            <!-- <li v-for="name in names">{{ name }}</li>  -->
+            <!-- atau -->
+            <li v-for="name in names" v-text="name"></li>
+        </ol>
+        <input type="text" id="input" v-model="newName">
+        <button id="button">Add Name</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#root',
+            data: {
+                names: ['adi', 'adit', 'ria', 'robi']
+            },
+
+            mointed(){
+                document.querySelector('#button').addEventListener('click', () => )
+            }
+
+        });
+    </script>
+</body>
+
+</html>

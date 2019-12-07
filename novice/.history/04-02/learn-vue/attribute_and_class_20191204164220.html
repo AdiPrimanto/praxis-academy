@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <style>
+        /* .color-red {
+            color: red
+        } */
+        .isLoading
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <!-- <button v-on:click="method" v-bind:title="title">Hover over me</button> -->
+        <!-- <h1 :class="className">Hei Adi</h1> -->
+        <button :class="{'is-loading': isLoading}" @click="toggleClass">Click Me</button>
+    </div>
+
+    <script>
+        //v-on == @
+        //v-bind == :class
+        var app = new Vue({
+            el: '#root',
+            data: {
+                // title: 'Now the title is being set through JavaScript'
+                className: 'color-red'
+            },
+            method: {
+                toggleClass() {
+                    this.isLoading = true;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
