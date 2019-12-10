@@ -26,16 +26,12 @@ export default {
   },
   methods: {
     deleteTodo(id){
-      /* eslint-disable */
-      axios.delete('https://jsonplaceholder.typicode.com/todos/${id}')
-        .then(res => this.todos = this.todos.filter(todo => todo.id !== id))
-        .catch(err => console.log(err));
+      this.todos = this.todos.filter(todo => todo.id !== id);
     },
     addTodo(newTodo){
       const { title, completed } = newTodo;
 
       //make post request
-      /* eslint-disable */
       axios.post('https://jsonplaceholder.typicode.com/todos', {
         title,
         completed
@@ -46,7 +42,7 @@ export default {
   },
   created() {
     /* eslint-disable */
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
       .then(res => this.todos = res.data)
       .catch(err => console.log(err));
   },
